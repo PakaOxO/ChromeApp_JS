@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Chrome App</title>
+</head>
+<body>
+    <div id="containerTop">
+        <form id="frmLogin">
+          <input name="username" class="inputTxt" placeholder="USERNAME" />
+          <button type="submit" class="button">LOGIN</button>
+        </form>
+        <div id="boxTodayWeather">
+        </div>
+    </div>
+    <div id="boxTodayInfo">
+        <span id="txtClock">00:00:00</span>
+        <span id="txtDate"></span>
+    </div>
+    <div id="main_container">
+        <div id="boxUserInfo">
+          <h1></h1>
+          <input type="button" class="button" value="logout" />
+    </div>
+    <div id="boxTodos">
+        <div id="titleTodos">Today's Todo List</div>
+        <form id="frmTodos">
+            <input type="text" class="inputTxt" placeholder="Add Your Todays Todo" />
+            <button type="submit" class="button">ADD</button>
+        </form>
+        <hr>
+        <ul id="listTodos"></ul>
+    </div>
+    </div>
+    <div id="boxQuote">
+        <span id="txtQuote"></span>
+        <span id="txtQtKor"></span>
+    </div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>

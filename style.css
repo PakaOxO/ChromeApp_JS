@@ -1,0 +1,207 @@
+body {
+    padding: 1.5rem;
+    background-color: black;
+}
+  
+.hidden {
+    display: none;
+}
+
+.inputTxt {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: auto;
+    line-height: normal;
+    padding: 5px 0 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.inputTxt::placeholder {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.inputTxt:focus {
+    outline: none;
+    border: 1px solid #f76161;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 0.85;
+    border: 2px solid #f76161;
+    border-radius: 4px;
+    height: auto;
+    line-height: normal;
+    padding: 5px;
+    font-size: 1rem;
+    color: #f76161;
+}
+
+.button:hover {
+    background-color: #f76161;
+    opacity: 0.85;
+    color: #fff;
+}
+
+#containerTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+#containerTop #boxTodayWeather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(235, 235, 235, 0.2);
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#containerTop #boxTodayWeather #imgWeather {
+    height: 80%;
+    margin-right: 10px;
+}
+
+#containerTop #boxTodayWeather #txtWeatherInfo {
+    font-weight: 600;
+    color: #f76161;
+    font-size: 0.9rem;
+}
+
+#boxTodayInfo {
+    margin-top: 50px;
+}
+
+#main_container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 600px;
+    height: 450px;
+    border-radius: 20px;
+    background: rgba(235, 235, 235, 0.2);
+}
+
+#boxTodayInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#boxTodayInfo #txtClock {
+    display: inline-block;
+    width: 250px;
+    margin-right: 20px;
+    font-size: 4rem;
+}
+
+#boxTodayInfo #txtDate {
+    display: inline-block;
+    font-size: 1.2rem;
+    height: auto;
+    vertical-align: bottom;
+
+}
+
+#boxUserInfo h1 {
+    display: inline-block;
+    color: #fff;
+}
+
+#boxTodos {
+    color: #fff;
+}
+
+#boxTodos #titleTodos {
+    margin-bottom: 0.6rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#boxTodos .inputTxt {
+    width: 85%;
+}
+
+#boxTodos button {
+    width: 50px;
+}
+
+#boxTodos hr {
+    margin-top: 10px;
+    border: 1px solid rgba(235, 235, 235, 0.6);
+}
+
+#boxTodos #listTodos {
+    padding: 0;
+}
+
+#boxTodos #listTodos li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 500;
+    list-style: none;
+    margin: 0 0 .4rem 0;
+    padding: .4rem 1rem;
+    border-radius: 6px;
+}
+
+#boxTodos #listTodos li:hover {
+    background-color: rgba(145, 145, 255, 0.4);
+}
+
+#boxTodos #listTodos li button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 0.6rem;
+    height: auto;
+    width: 30px;
+}
+
+#boxQuote {
+    margin-top: 1rem;
+    text-align: center;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.boxBgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.95;
+    text-align: center;
+}
+
+@media screen and (min-width: 970px) {
+    .boxBgImage {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 969px) {
+    .boxBgImage {
+        width: 970px;
+    }
+
+    #containerTop {
+        width: 80%;
+        min-width: 550px;
+        margin: 0 auto;
+    }
+
+    #boxTodayInfo {
+        min-width: 480px;
+    }
+
+    #main_container {
+        width: 80%;
+        min-width: 480px;
+    }
+}
